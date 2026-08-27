@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deivisson Personal-T</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <div class="logo">
+      <span class="logo__icon"><i class="fa-solid fa-dumbbell"></i></span>
+      <div class="logo__text">
+        <span class="logo__title"><span class="dot">Deivisson</span> Personal</span>
+        <span class="logo__sub">MENTE FORTE · CORPO FORTE</span>
+      </div>
+    </div>
+
+    <nav class="nav" id="nav">
+      <a href="#sobre" class="nav__link">SOBRE MIM</a>
+      <a href="#servicos" class="nav__link">SERVIÇOS</a>
+      <a href="#formacao" class="nav__link nav__link--active">FORMAÇÃO</a>
+      <a href="#youtube" class="nav__link">YOUTUBE</a>
+      <a href="#contato" class="nav__link">CONTATO</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container hero__grid">
+
+    <div class="hero__content">
+      <h1 class="hero__title">
+        TREINO, <span class="accent">FOCO, </span><br>
+        PERFORMANCE.
+      </h1>
+      <p class="hero__subtitle">NO JOGO E NA VIDA.</p>
+      <p class="hero__desc">
+        Profissional de Educação Física e Personal Trainer ajudando você a
+        superar limites dentro e fora das telas. <span class="logo__title">Gamer nas horas vagas.</span>
+      </p>
+
+      <div class="hero__actions">
+        <a onclick="WhatsApp()" class="btn btn--primary">
+          <i class="fa-solid fa-dumbbell"></i> TREINE COMIGO <i class="fa-brands fab fa-whatsapp"></i>
+        </a>
+        <!--<a href="#youtube" class="btn btn--outline">-->
+        <a href="https://www.youtube.com/@LiroGameplays" target="_blank" class="btn btn--outline">
+          <i class="fa-solid fa-circle-play"></i> CONHEÇA MEU CANAL
+        </a>
+      </div>
+
+      <ul class="hero__features">
+        <li><i class="fa-solid fa-dumbbell"></i> Treinos Personalizados</li>
+        <li><i class="fa-solid fa-user"></i> Acompanhamento Individual</li>
+        <li><i class="fa-solid fa-chart-line"></i> Resultados Consistentes</li>
+      </ul>
+    </div>
+
+    <div class="hero__media">
+      <div class="hero__frame">
+       <!-- <div class="hero__placeholder">
+          <i class="fa-solid fa-person-running"></i>-->
+          <img src="./media/img01.png" alt="Personal trainer" class="hero__img">
+        </div>
+
+      </div>
+
+      <div class="info-card">
+        <div class="info-card__item">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <div>
+            <strong>PROFISSIONAL DE EDUCAÇÃO FÍSICA</strong>
+            <!--<span>CREF: 123456-G/SP</span>-->
+          </div>
+        </div>
+        <div class="info-card__item">
+          <i class="fa-solid fa-user-tie"></i>
+          <div><strong>PERSONAL TRAINER</strong></div>
+        </div>
+        <div class="info-card__item">
+          <i class="fa-solid fa-gamepad"></i>
+          <div><strong>PROFº DE MUSCULAÇÃO</strong></div>
+        </div>
+        <div class="info-card__item">
+          <i class="fa-solid fa-gamepad"></i>
+          <div><strong>CRIADOR DE CONTEÚDO</strong></div>
+        </div>
+        <div class="info-card__item">
+          <i class="fa-solid fa-bullseye"></i>
+          <div><strong>FOCO EM SAÚDE, DESEMPENHO E DISCIPLINA</strong></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer" id="contato">
+  <div class="container footer__grid">
+    <div class="footer__contact">
+      <span class="contacts">VAMOS CONVERSAR?</span>
+      <p>Estou pronto para te ajudar a alcançar seus objetivos.</p>
+
+      <ul class="footer__list">
+        <li onclick="WhatsApp()" ><i class="fa-solid fa-phone"></i><i class="fa-brands fab fa-whatsapp"></i> (11) 97989-8680</li>
+        <li><i class="fa-brands fa-instagram"></i><a href="https://instagram.com/@"> @instagram</a></li>
+        <li><i class="fa-solid fa-envelope"></i><a href="mailto:deivisson22sh@gmail.com"> deivisson22sh@gmail.com</a> </li>
+        <li><i class="fa-solid fa-location-dot"></i> São Bernardo do Campo - SP</li>
+      </ul>
+    </div>
+
+    <div class="footer__quote">
+      <p><span class="final__icon"><i class="fa-solid fa-dumbbell"></i> DISCIPLINA HOJE,<br>RESULTADOS AMANHÃ.</p>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container" class="btn btn--outline">
+      <a onclick="WhatsAppFraniel()"> Desenvolvido por <b style="color: #f97316;">Franiel.Tech</b> &copy; 2026 </a>
+    </div>
+  </div>
+</footer>
+
+<script src="./script/script.js"></script>
+</body>
+</html>
