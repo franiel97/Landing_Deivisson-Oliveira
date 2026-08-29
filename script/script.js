@@ -46,7 +46,7 @@ function WhatsApp() {
 }
 function WhatsAppFraniel() {
 	const numero = "5511992091856";
-	const mensagem = encodeURIComponent("Olá! Vim por uma das paginas desenvolvidas por você.");
+	const mensagem = encodeURIComponent("Olá! Vim por uma das paginas desenvolvidas por você. Você consegue criar uma pra mim também?");
 	const link = `https://wa.me/${numero}?text=${mensagem}`;
 	window.open(link, "_blank");
 }
