@@ -40,7 +40,7 @@ const observer = new IntersectionObserver((entries) => {
 
 function WhatsApp() {
 	const numero = "5511984501103";
-	const mensagem = encodeURIComponent("Olá, Deivisson! Vim pela sua landing page.");
+	const mensagem = encodeURIComponent("Olá, Deivisson! Vim pela sua landing page e quero saber mais sobre o treino personalizado.");
 	const link = `https://wa.me/${numero}?text=${mensagem}`;
 	window.open(link, "_blank");
 }

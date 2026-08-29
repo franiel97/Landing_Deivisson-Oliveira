@@ -682,8 +682,14 @@ body {
  
   .footer__grid { grid-template-columns: 1fr; text-align: left; }
   .footer__quote { text-align: left; }
+  .info-card {
+        position: absolute;
+        top: 600px;
+        right: 105px;
+  }
+
 }
- 
+
 /* --- ≤ 768px: mobile grande / tablet retrato --- */
 @media (max-width: 768px) {
   .container { padding: 0 var(--space-4); }
@@ -717,10 +723,12 @@ body {
   .hero__actions { flex-direction: column; align-items: stretch; }
   .hero__actions .btn { justify-content: center; }
  
-  .info-card {
-    position: static;
-    width: 100%;
-  }
+    .info-card {
+        right: 60px; 
+        position: static;
+        width: auto;
+        height: auto;
+    }
  
   .stats { grid-template-columns: repeat(2, 1fr); }
   .services__grid { grid-template-columns: 1fr; }
