@@ -21,7 +21,7 @@ document.querySelectorAll('.nav__link').forEach(link => {
 });
 
 // ===== Link ativo conforme a seção visível =====
-const sections = document.querySelectorAll('section[id]');
+/*const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav__link');
 
 const observer = new IntersectionObserver((entries) => {
@@ -36,10 +36,10 @@ const observer = new IntersectionObserver((entries) => {
       });
     }
   });
-}, { rootMargin: '-40% 0px -50% 0px' });
+}, { rootMargin: '-40% 0px -50% 0px' }); */
 
 function WhatsApp(idBotao) {
-  const numero = "5511979898680";
+  const numero = "551198450-1103";
   let mensagem;
 
   if (idBotao === "personal") {
