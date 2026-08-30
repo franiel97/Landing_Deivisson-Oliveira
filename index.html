@@ -22,10 +22,8 @@
     </div>
 
     <nav class="nav" id="nav">
-      <a href="#sobre" class="nav__link">SOBRE MIM</a>
       <a href="#servicos" class="nav__link">SERVIÇOS</a>
       <a href="#formacao" class="nav__link nav__link--active">FORMAÇÃO</a>
-      <a href="#youtube" class="nav__link">YOUTUBE</a>
       <a href="#contato" class="nav__link">CONTATO</a>
     </nav>
 
@@ -45,12 +43,11 @@
       </h1>
       <p class="hero__subtitle">NO JOGO E NA VIDA.</p>
       <p class="hero__desc">
-        Profissional de Educação Física e Personal Trainer ajudando você a
-        superar limites dentro e fora das telas. <span class="logo__title"><br>Gamer nas horas vagas.</span>
+        Profissional de Educação Física e Personal Trainer  com foco em resultados reais e duradouros. Acredito que disciplina, consistência e mentalidade são a chave para alcançar o próximo nível.. <span class="logo__title"><br>Gamer nas horas vagas.</span>
       </p>
 
       <div class="hero__actions">
-        <a onclick="WhatsApp()" class="btn btn--primary">
+        <a id="WhatsApp" onclick="WhatsApp(this.id)" class="btn btn--primary">
           <i class="fa-solid fa-dumbbell"></i> TREINE COMIGO <i class="fa-brands fab fa-whatsapp"></i>
         </a>
         <!--<a href="#youtube" class="btn btn--outline">-->
@@ -73,6 +70,7 @@
           <img src="./media/img01.png" alt="Personal trainer" class="hero__img">
         </div>
 
+</section>
       </div>
 
       <div class="info-card">
@@ -104,6 +102,76 @@
 
   </div>
 </section>
+ 
+<!-- ===== SERVIÇOS ===== -->
+<section class="services" id="servicos">
+  <div class="container">
+    <h2 class="section-title section-title--center">SERVIÇOS</h2>
+ 
+    <div class="services__grid">
+      <div class="service-card" >
+        <i class="fa-solid fa-dumbbell service-card__icon"></i>
+        <h3>PERSONAL TRAINER</h3>
+        <p>Treinos personalizados de acordo com seu objetivo, rotina e condicionamento.</p>
+        <ul class="check-list">
+          <li><i class="fa-solid fa-check"></i> Emagrecimento</li>
+          <li><i class="fa-solid fa-check"></i> Hipertrofia</li>
+          <li><i class="fa-solid fa-check"></i> Condicionamento</li>
+          <li><i class="fa-solid fa-check"></i> Saúde e Qualidade de Vida</li>
+        </ul>
+          <a id="personal" onclick="WhatsApp(this.id)" class="btn btn--primary" style="width: 100%; justify-content: center;">
+          <i class="fa-solid fa-dumbbell"></i> VER PLANOS DE TREINO
+        </a>
+      </div>
+ 
+      <div class="service-card" >
+        <i class="fa-solid fa-clipboard-list service-card__icon"></i>
+        <h3>AVALIAÇÃO FÍSICA</h3>
+        <p>Análise completa para entender seu corpo e criar a melhor estratégia.</p>
+        <ul class="check-list">
+          <li><i class="fa-solid fa-check"></i> Anamnese</li>
+          <li><i class="fa-solid fa-check"></i> Avaliação Postural</li>
+          <li><i class="fa-solid fa-check"></i> Composição Corporal</li>
+          <li><i class="fa-solid fa-check"></i> Planejamento Individual</li>
+        </ul>
+          <a id="aval_fisica" onclick="WhatsApp(this.id)" class="btn btn--primary" style="width: 100%; justify-content: center;">
+          <i class="fa-solid fa-dumbbell"></i> SOLICIRTAR AVALIAÇÃO
+        </a>
+      </div>
+ 
+      <div class="service-card" >
+        <i class="fa-solid fa-person-running service-card__icon"></i>
+        <h3>TREINAMENTO ONLINE</h3>
+        <p>Acompanhamento 100% online com treinos e ajustes semanais.</p>
+        <ul class="check-list">
+          <li><i class="fa-solid fa-check"></i> Treinos e dietas que dão resultado!</li>
+          <li><i class="fa-solid fa-check"></i> Suporte Direto</li>
+          <li><i class="fa-solid fa-check"></i> Flexibilidade de Horários</li>
+          <li><i class="fa-solid fa-check"></i> Resultados de Verdade</li>
+        </ul>
+        <a id="treino_online" onclick="WhatsApp(this.id)" class="btn btn--primary" style="width: 100%; justify-content: center;">
+          <i  class="fa-solid fa-dumbbell"></i> COMEÇAR AGORA MESMO 
+        </a>
+      </div>
+
+      <div class="service-card-2" id="ebook">
+        <i class="fa-solid fa-book" style="color: var(--purple); font-size: 1.8rem;"></i>
+        <h3>E-Book</h3>
+        <p>Acompanhamento 100% online com treinos e ajustes semanais.</p>
+        <ul class="check-list">
+          <li><i class="fa-solid fa-check"></i> Treinos práticos para qualquer nível</li>
+          <li><i class="fa-solid fa-check"></i> Dicas de nutrição sem enrolação </li>
+          <li><i class="fa-solid fa-check"></i> Estratégias comprovadas de progressão </li>
+          <li><i class="fa-solid fa-check"></i> Conteúdo prático e de fácil execução. </li>
+        </ul>
+        <a id="ebook" onclick="WhatsApp(this.id)" class="btn btn--secondary" style="width: 100%; justify-content: center;">
+          <i class="fa-solid fa-dumbbell"></i> GARANTIR E-BOOK! </i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <footer class="footer" id="contato">
   <div class="container footer__grid">
@@ -112,15 +180,15 @@
       <p>Estou pronto para te ajudar a alcançar seus objetivos.</p>
 
       <ul class="footer__list">
-        <li onclick="WhatsApp()" ><i class="fa-solid fa-phone"></i><i class="fa-brands fab fa-whatsapp"></i> (11) 97989-8680</li>
-        <li><i class="fa-brands fa-instagram"></i><a href="https://instagram.com/@"> @instagram</a></li>
+        <li id="WhatsApp" onclick="WhatsApp(this.id)" ><i class="fa-solid fa-phone"> </i> <i class="fa-brands fab fa-whatsapp"> </i> (11) 97989-8680</li>
+        <!--<li><i class="fa-brands fa-instagram"></i><a href="https://instagram.com/@"> @instagram</a></li>-->
         <li><i class="fa-solid fa-envelope"></i><a href="mailto:deivisson22sh@gmail.com"> deivisson22sh@gmail.com</a> </li>
         <li><i class="fa-solid fa-location-dot"></i> São Bernardo do Campo - SP</li>
       </ul>
     </div>
 
     <div class="footer__quote">
-      <p><span class="dumbbell__icon"><i class="fa-solid fa-dumbbell" id="dumbbell_left"></i> DISCIPLINA HOJE, RESULTADOS AMANHÃ.</p>
+      <p><span class="dumbbell__icon"><i class="fa-solid fa-dumbbell" id="dumbbell_left" ></i> DISCIPLINA HOJE, RESULTADOS AMANHÃ.</p>
     </div>
   </div>
 

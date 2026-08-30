@@ -38,15 +38,30 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { rootMargin: '-40% 0px -50% 0px' });
 
-function WhatsApp() {
-	const numero = "5511984501103";
-	const mensagem = encodeURIComponent("Olá, Deivisson! Vim pela sua landing page e quero saber mais sobre o treino personalizado.");
-	const link = `https://wa.me/${numero}?text=${mensagem}`;
-	window.open(link, "_blank");
+function WhatsApp(idBotao) {
+  const numero = "5511979898680";
+  let mensagem;
+
+  if (idBotao === "personal") {
+    mensagem = "Olá! Vi o site e quero saber mais sobre os planos de Personal Trainer.";
+  } else if (idBotao === "aval_fisica") {
+    mensagem = "Olá! Gostaria de solicitar uma Avaliação Física.";
+  } else if (idBotao === "treino_online") {
+    mensagem = "Olá! Quero começar o Treinamento Online agora mesmo.";
+  } else if (idBotao === "ebook") {
+    mensagem = "Olá! Quero garantir o E-book, pode me passar os detalhes?";
+  } else if (idBotao == "WhatsApp") {
+    mensagem = "Olá! Vim pelo seu site e quero saber mais sobre os seus serviços.";
+  } else {
+    mensagem = "Olá! Vim pelo seu site e quero saber mais sobre os seus serviços.";
+  }
+
+  window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`, "_blank");
 }
+
 function WhatsAppFraniel() {
 	const numero = "5511992091856";
-	const mensagem = encodeURIComponent("Olá! Vim por uma das paginas desenvolvidas por você. Você consegue criar uma pra mim também?");
+	const mensagem = encodeURIComponent("Olá! Vim por uma das paginas desenvolvidas por você. Quero um site também!");
 	const link = `https://wa.me/${numero}?text=${mensagem}`;
 	window.open(link, "_blank");
 }
