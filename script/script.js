@@ -39,7 +39,7 @@ const observer = new IntersectionObserver((entries) => {
 }, { rootMargin: '-40% 0px -50% 0px' }); */
 
 function WhatsApp(idBotao) {
-  const numero = "551198450-1103";
+  const numero = "5511984501103";
   let mensagem;
 
   if (idBotao === "personal") {
